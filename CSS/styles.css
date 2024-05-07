@@ -31,7 +31,7 @@ body {
 }
 
 .nav-item {
-    transition: .5s ease;
+    transition: .5s ease-out;
 }
 
 .nav-item:hover {
@@ -40,12 +40,13 @@ body {
 
 .nav-item:active {
     scale: 1;
-    transition: ease .5s;
+    transition: .1s;
 }
 
 .resume a {
     color: #00abf0 !important;
     padding: 10px;
+    transition: .1s;
 }
 
 .resume a:active {
@@ -63,10 +64,39 @@ body {
 
 .title-info {
     color: black;
+    line-height: 5;
 }
 
 .title-info .h3 {
     display: inline-flex;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.cv {
+    background-color: #00abf0;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+}
+
+.cv a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cv:active {
+    scale: .97;
+}
+
+.cv:hover {
+    cursor: pointer;
 }
 
 .dynamic-text {
@@ -118,6 +148,7 @@ body {
 .title-img {
     border: 1px solid;
     display: grid;
+    text-align: center;
 }
 
 .title-img img {
@@ -136,7 +167,7 @@ body {
 
 .social-links {
     display: flex;
-    text-align: center;
+    margin: 0 50px;
     border: 1px solid;
 }
 
@@ -259,5 +290,19 @@ body {
 
     .social-links-mobi a {
         margin: 5px 0;
+    }
+
+    .cv {
+        margin: 0 auto;
+        height: 30px;
+        width: 150px;
+    }
+
+    .cv a {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
     }
 }
