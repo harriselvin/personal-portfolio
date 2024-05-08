@@ -9,9 +9,11 @@ body {
     background-color: #D9D9D9;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
+    font-size: larger;
     font-style: normal;
 }
 
+/* Landing/Hero Section */
 .header {
     max-height: 100vh;
 }
@@ -92,6 +94,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    text-decoration: none;
+    color: white;
 }
 
 .cv:active {
@@ -198,6 +202,7 @@ body {
     text-transform: uppercase;
 }
 
+/* About Section */
 .about {
     margin: 0px 15%;
     height: 100vh;
@@ -231,24 +236,19 @@ body {
     padding-right: 10px;
 }
 
-.location-info .bi-globe2 {
-    height: 30px;
-    color: #00abf0;
-    padding-right: 10px;
-}
-
 .area {
     padding: 10px 0;
 }
 
+/* Skills Section */
 .skills {
     margin: 0px 15%;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh;
     text-align: center;
     margin: 10%;
 }
@@ -258,13 +258,22 @@ body {
     width: 90%;
 }
 
+/* Education/Experience Section */
 .edu {
     margin: 0px 15%;
     height: 90vh;
 }
 
+.edu-info-mobile {
+    display: none;
+}
+
 .edu-info-container {
     display: flex;
+}
+
+.edu-info-container .btn {
+    background-color: #00abf0;
 }
 
 .edu-info-container .card .add-info {
@@ -285,6 +294,120 @@ body {
     padding: 10px;
 }
 
+/* Projects Section */
+.projects {
+    margin: 0px 15%;
+    height: 90vh;
+}
+
+.projects-container {
+    padding: 50px 0;
+}
+
+.projects .carousel-item {
+    border: 5px solid;
+}
+
+.projects .carousel {
+    height: 420px;
+}
+
+.projects .carousel-inner .carousel-item {
+    height: 50vh;
+}
+
+.projects .carousel-inner .carousel-item .tally_count {
+    text-decoration: none;
+    color: black;
+}
+
+.projects .carousel-inner .carousel-item .carousel-caption {
+    text-shadow: 1px 1px 5px grey;
+    font-size: 15px;
+    color: black !important;
+}
+
+.projects .carousel-inner .carousel-item .github-link .bi-github{
+    height: 40px;
+}
+
+.projects .carousel-inner .carousel-item .github-link a:hover {
+    color: black;
+}
+
+.projects .carousel-inner .carousel-item .github-link a:active {
+    opacity: .6;
+}
+
+.projects .carousel-inner .carousel-item img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.8s ease;
+    opacity: .3;
+}
+
+.projects .carousel-inner .carousel-item img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: all 0.8s ease;
+    opacity: 1;
+}
+
+.testimonials {
+    margin: 0px 15%;
+    height: 90vh;
+}
+
+.testimonials .carousel {
+    height: 450px;
+}
+
+.testimonials-title {
+    padding: 50px 0;
+}
+
+.testimonials-container {
+    background-color: #00abf0;
+}
+
+.testimonials-sub {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+
+.testimonials-sub .stars-icon {
+    padding-bottom: 10px;
+}
+
+.testimonials-sub .h4 {
+    font-size: 30px;
+}
+
+.testimonials .carousel-indicators {
+    margin: -5px 0;
+}
+
+.testimonials .carousel-inner .person {
+    font-size: 15px;
+}
+
+.testimonials .carousel-inner .t-person {
+    border-radius: 50%;
+}
+
+.testimonials .carousel-inner .carousel-item {
+    height: 50vh;
+}
+
+.testimonials .testimonial-img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 425px) {
     .desktop-nav {
         display: none;
@@ -294,6 +417,7 @@ body {
         display: block;
     }
 
+    /* Landing/Hero Section */
     .navbar-brand img {
         height: 50px;
         margin: -10px;
@@ -302,7 +426,7 @@ body {
     .hero {
         display: grid;
         grid-template-columns: auto;
-        height: 90vh;
+        height: 100vh;
         text-align: center;
     }
 
@@ -325,6 +449,10 @@ body {
         display: block;
         order: 1;
         margin-top: 20%;
+    }
+
+    .cv {
+        display: none;
     }
 
     .social-mobile {
@@ -373,6 +501,7 @@ body {
         }
     }
 
+    /* Navbar Section */
     .offcanvas-body .nav-link:active {
         color: rgba(255, 255, 255, .5);
     }
@@ -417,7 +546,123 @@ body {
         margin: 5px 0;
     }
 
+    /* About Section */
     .about {
+        margin: 0;
+        height: 120vh;
         text-align: center;
     }
+    
+    .about-info {
+        padding: 60px 0;
+    }
+    
+    .about-container {
+        padding: 10px 0;
+    }
+    
+    .about p {
+        padding: 0px 0;
+        font-size: 15px;
+    }
+    
+    .location-info .bi-geo-alt {
+        height: 20px;
+        padding-right: 0px;
+        font-size: 15px;
+    }
+
+    /* Skills Section */
+    .skills {
+        margin: 0 30px;
+    }
+
+    .skills .h2 {
+        text-align: center;
+    }
+
+    .skills-container .h4 {
+        font-size: 15px;
+    }
+    
+    .skills-container {
+        height: 60vh;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .skills-container .list {
+        line-height: 5;
+        font-size: 10px;
+        margin-left: -15px;
+    }
+    
+    .skills-container .languages, .design-tools, .soft-skills {
+        width: 100px;
+    }
+
+    .skills-container .languages .list {
+        width: 100px;
+    }
+
+    .skills-container .design-tools .list {
+        width: 100px;
+    }
+
+    .skills-container .soft-skills .list {
+        width: 100px;
+    }
+
+    /* Education Section */
+    .edu {
+        margin: 0;
+        height: 90vh;
+    }
+
+    .edu-info {
+        display: none;
+    }
+    
+    .edu-info-mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .edu-info-container .card .add-info {
+        font-weight: 400;
+    }
+    
+    .edu-info-container p {
+        height: 150px;
+    }
+
+    .LC .work-xp {
+        height: 45px !important;
+    }
+
+    .edu-info-container .work-xp {
+        height: 30px;
+    }
+    
+    .education {
+        width: 80%;
+        height: 30px;
+    }
+    
+    .education .card {
+        height: 350px;
+        width: 200px;
+        padding: 10px;
+        position: absolute;
+        margin-top: 45px;
+        margin-left: -65px;
+    }
+
+    .education .levana {
+        position: absolute;
+        margin-top: 45px;
+        margin-left: -150px;
+    }
+
+
 }

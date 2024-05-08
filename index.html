@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elvin Harris</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="main-container">
     <header class="header">
 
@@ -129,6 +132,9 @@
                         <!-- <li><span class="title"></span></li> -->
                     </ul>
                 </div>
+                <div class="cv">
+                  <a href="">View CV</a>
+                </div>
             </div>
             <div class="title-img">
                 <img src="./Elvin-body.jpg" alt="My Image" loading="lazy">
@@ -163,7 +169,10 @@
 
       <div class="container">
 
-        <div id="about" class="about">
+        <div id="about" class="about" 
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <div class="about-info">
             <div class="about-title">
               <div class="h2">About</div>
@@ -190,7 +199,10 @@
           </div>
         </div>
 
-        <div class="skills">
+        <div class="skills" 
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <div class="h2">Skills</div>
           <div class="skills-container">
             <div class="languages">
@@ -221,7 +233,10 @@
           </div>
         </div>
 
-        <div class="edu">
+        <div class="edu"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <div class="edu-container">
             <div class="edu-title">
               <div class="h2">Education & Experience</div>
@@ -287,11 +302,261 @@
               </div>
 
             </div>
+
+            <div class="edu-info-mobile">
+
+              <div class="edu-info-container LC">
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample3">
+                    2024
+                  </button>
+                </p>
+                <div class="education">
+                  <div class="collapse collapse-verticle" id="collapseWidthExample1">
+                    <div class="card card-body">
+                      <div class="text">
+                        <div class="h3">Software Development</div>
+                        <p class="work-xp">Life Choices Coding Academy</p>
+                      My Software Development Course is currently still in progress.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edu-info-container CA">
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample3">
+                    2023
+                  </button>
+                </p>
+                <div class="education">
+                  <div class="collapse collapse-verticle" id="collapseWidthExample2">
+                    <div class="card card-body">
+                      <div class="text">
+                        <div class="h3">Software Development</div>
+                        <p class="work-xp">CodeSpace Academy</p>
+                        I completed a Software Development Course at <span class="add-info">CodeSpace Academy</span> where I got introduced to <span class="add-info"> HTML, CSS, JavaScript & React.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edu-info-container LP">
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+                    2022
+                  </button>
+                </p>
+                <div class="education">
+                  <div class="collapse collapse-verticle" id="collapseWidthExample3">
+                    <div class="card card-body levana">
+                      <div class="text">
+                        <div class="h3">Education Assistant</div>
+                        <p class="work-xp">Levana Primary School</p>
+                        <ul>
+                          <li>Administered computer lab</li>
+                          <li>Facilitated classes on my own</li>
+                          <li>Administration</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
+        <div class="projects" data-aos="zoom-in">
+          <div class="projects-container">
+            <div class="h2">Projects</div>
+          </div>
+          <div class="carousel">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <a href="https://digital-keyboard-umber.vercel.app/" target="_blank" class="digital-keyboard"><img src="./Digital_keyboard_app.png" class="d-block w-100" alt="Keyboard App"></a>
+                  <div class="carousel-caption text-white d-none d-md-block">
+                    <h5>Digital Keyboard</h5>
+                    <p>Introducing SleekKeys, the visually stunning HTML and CSS-based digital keyboard app that combines form with function to deliver an unparalleled typing experience. Designed with elegance and sophistication in mind, SleekKeys offers a visually appealing interface that enhances your typing journey.</p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/digital_keyboard.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-dark" data-bs-interval="2000">
+                  <a href="https://digital-calculator-green.vercel.app/" target="_blank" class="digital_calculator"><img src="./Calculator_app.png" class="d-block w-100" alt="Calculator App"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Digital Calculator</h5>
+                    <p>Introducing DesignCalc, the visually captivating HTML and CSS-based calculator app that seamlessly combines aesthetics with functionality to deliver a delightful user experience. Crafted with precision and attention to detail.</p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/digital_calculator.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-dark">
+                  <a href="https://book-connect-app-ochre.vercel.app/" target="_blank"><img src="./Book_connect_app.png" class="d-block w-100" alt="Book Connect"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Book Connect</h5>
+                    <p>Introducing Book Connect, the innovative HTML, CSS, and JavaScript-powered app that opens the door to a world of literary discovery and exploration. Whether you're a voracious reader, an aspiring bibliophile, or someone simply seeking your next literary adventure, Book Connect empowers you to search for books with ease and efficiency, revolutionizing the way you discover and engage with literature.</p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/book_connect_app.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="" target="_blank"><img src="./Tally_count_app.png" class="d-block w-100" alt="Tally Count Clone"></a>
+                  <div class="carousel-caption text-white d-none d-md-block">
+                    <h5>Tally Count Clone</h5>
+                    <p>Introducing Tally Count Clone, the JavaScript-powered app that puts the power of tally counting at your fingertips. Whether you're tracking inventory, tallying scores, or simply keeping count of any repetitive task, Tally Count Clone simplifies the process with its intuitive interface and user-friendly design. <a href="https://tallycount.app/" target="_blank" class="tally_count">Tally Count App</a>.</p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/digital_calculator.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-dark">
+                  <a href="https://calendar-app-rho.vercel.app/" target="_blank"><img src="./Calendar_app.png" class="d-block w-100" alt="Calendar"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Digital Calandar</h5>
+                    <p>I build this functional calendar app using JavaScript, designed to seamlessly track your days with ease and efficiency. </p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/calendar_app.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-dark">
+                  <a href="https://kitchen-express-app.vercel.app/" target="_blank"><img src="./Kitchen_express_app.png" class="d-block w-100" alt="Kitchen Express"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Kitchen Express</h5>
+                    <p>Welcome to Kitchen Express, the revolutionary JavaScript-powered app that elevates your dining experience to new heights. Kitchen Express streamlines the process of ordering, preparing, and serving delicious meals with unparalleled efficiency.</p>
+                    <p class="github-link"><a href="https://github.com/harriselvin/kitchen_express_app.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg></a></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <div class="testimonials-title">
+            <div class="h2">Testimonials</div>
+          </div>
+          <div class="testimonials-container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="testimonials-sub">
+                <div class="stars-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </div>
+                <div class="h4">
+                  Don’t take my word for it. Take theirs
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-img">
+                    <img src="./Elvin-body.jpg" class="t-person d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="testimonial-txt">"Wow"</h5>
+                    <p class="person">Name</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-img">
+                    <img src="..." class="t-person d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="testimonial-txt">"Wow"</h5>
+                    <p class="person">Name</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-img">
+                    <img src="..." class="t-person d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="testimonial-txt">"Wow"</h5>
+                    <p class="person">Name</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-img">
+                    <img src="..." class="t-person d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="testimonial-txt">"Wow"</h5>
+                    <p class="person">Name</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-img">
+                    <img src="..." class="t-person d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="testimonial-txt">"Wow"</h5>
+                    <p class="person">Name</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </div>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
