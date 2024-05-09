@@ -24,16 +24,18 @@ body {
 }
 
 .logo img {
-    /* height: 50px; */
     width: 70px;
     margin: -20px 0;
     padding-top: 10px;
+
 }
 
 .navbar {
     background-color: #00abf0 !important;
     text-transform: uppercase;
     transition: 1.5s ease;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 5px black;
 }
 
 .nav-item {
@@ -163,6 +165,8 @@ body {
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px 1px black;
 }
 
 .title-img-mobile {
@@ -317,7 +321,7 @@ body {
     height: 90vh;
 }
 
-.projects-title .h2 {
+.projects .h2 {
     font-size: 40px;
 }
 
@@ -326,7 +330,7 @@ body {
 }
 
 .projects .carousel-item {
-    border: 5px solid;
+    border: 5px solid black;
 }
 
 .projects .carousel {
@@ -387,12 +391,16 @@ body {
     height: 450px;
 }
 
-.testimonials-title {
+.testimonials-title .h2 {
     padding: 50px 0;
+    font-size: 40px;
 }
 
 .testimonials-container {
     background-color: #00abf0;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 20px 0;
 }
 
 .testimonials-sub {
@@ -414,8 +422,8 @@ body {
 }
 
 .testimonials .carousel-indicators button {
-    height: 10px;
-    width: 10px;
+    height: 13px;
+    width: 13px;
     border-radius: 50%;
 }
 
@@ -443,7 +451,7 @@ body {
     height: 80vh;
 }
 
-.contact-title {
+.contact-title .h2 {
     padding: 50px 0;
     font-size: 40px;
 }
@@ -460,6 +468,10 @@ body {
 }
 
 .contact-container .my-info .get-in-touch {
+    display: grid;
+}
+
+.my-info .get-in-touch .questions {
     display: grid;
 }
 
@@ -491,6 +503,25 @@ body {
 .contact-container .contact-me .mail-me {
     font-size: 15px;
     padding: 5px;
+}
+
+.contact-container .contact-links {
+    display: flex;
+    margin: 0 -40px;
+}
+
+.contact-container .contact-links svg {
+    height: 40px;
+    padding: 0 10px;
+    
+}
+
+.contact-links .bi-github {
+    color: black;
+}
+
+.contact-links .bi-github:hover {
+    opacity: .9;
 }
 
 .contact-container .contact-me .bi-envelope {
@@ -536,9 +567,10 @@ body {
 
 /* Footer Section */
 .footer {
-    border-top: 1px solid;
+    border-top: 2px solid black;
     padding: 10px;
     background: linear-gradient(to right, black 10%,#D9D9D9 38%, #D9D9D9 67%, black);
+    box-shadow: -1px -1px 5px black;
 }
 
 .footer .logo {
@@ -592,11 +624,21 @@ body {
         order: 2;
     }
 
+    .title-info .h1 {
+        font-size: 25px;
+    }
+
+    .title-info .h3 {
+        font-size: 18px;
+    }
+
     .title-img-mobile img {
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         border-radius: 50%;
         margin: 10px 0 30px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 5px black;
     }
 
     .title-img {
@@ -606,7 +648,7 @@ body {
     .title-img-mobile {
         display: block;
         order: 1;
-        margin-top: 20%;
+        margin-top: 30%;
     }
 
     .cv {
@@ -710,6 +752,14 @@ body {
         height: 140vh;
         text-align: center;
     }
+
+    .about .h2 {
+        font-size: 25px;
+    }
+
+    .about .h3 {
+        font-size: 20px;
+    }
     
     .about-info {
         padding: 60px 0;
@@ -721,7 +771,7 @@ body {
     
     .about p {
         padding: 0px 0;
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .location-info .bi-geo-alt {
@@ -730,13 +780,19 @@ body {
         font-size: 15px;
     }
 
+    .location-info span {
+        font-size: 13px;
+    }
+
     /* Skills Section */
     .skills {
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .skills .h2 {
         text-align: center;
+        font-size: 25px;
+        padding: 20px 0;
     }
 
     .skills-container .h4 {
@@ -744,14 +800,14 @@ body {
     }
     
     .skills-container {
-        height: 60vh;
+        height: 50vh;
         text-align: center;
-        margin: 0;
+        margin: 0 0 0 -15px;
     }
     
     .skills-container .list {
-        line-height: 5;
-        font-size: 10px;
+        line-height: 4;
+        font-size: 13px;
         margin-left: -15px;
     }
     
@@ -769,12 +825,24 @@ body {
 
     .skills-container .soft-skills .list {
         width: 100px;
+        text-align: left;
+        margin-left: -25px;
+    }
+
+    .skills-container .soft-skills .list-group-item {
+        letter-spacing: 0;
     }
 
     /* Education Section */
     .edu {
         margin: 0;
         height: 100vh;
+    }
+
+    .edu .edu-title .h2 {
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
     }
 
     .edu-info {
@@ -784,6 +852,7 @@ body {
     .edu-info-mobile {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
     }
     
     .edu-info-container .card .add-info {
@@ -791,11 +860,16 @@ body {
     }
 
     .edu-info-container .text {
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .edu-info-container .h3 {
+        font-size: 17px;
     }
     
     .edu-info-container p {
-        height: 150px;
+        height: 100px;
+        font-size: 13px;
     }
 
     .LC .work-xp {
@@ -803,8 +877,8 @@ body {
     }
 
     .edu-info-container .work-xp {
-        height: 30px;
-        font-size: 17px;
+        height: 45px;
+        font-size: 15px;
     }
     
     .education {
@@ -827,10 +901,209 @@ body {
         margin-left: -150px;
     }
 
+    /* Projects Section */
+    .projects {
+        margin: 0;
+        height: 100vh;
+    }
+
+    .projects .h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .projects-container {
+        padding: 30px 0;
+    }
+
+    .projects .carousel-item {
+        border: 3px solid black;
+    }
+
+    .projects .carousel {
+        height: 450px;
+    }
+
+    .projects .carousel-inner .carousel-item {
+        height: 70vh;
+    }
+
+    .projects .carousel-inner .carousel-item .carousel-caption {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .projects .carousel-inner .carousel-item .github-link .bi-github{
+        height: 20px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        margin: 0;
+        height: 105vh;
+    }
+
+    .testimonials-title .h2 {
+        padding: 20px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .testimonials-container {
+        padding: 20px 0;
+    }
+
+    .testimonials-sub {
+        padding-top: 0;
+    }
+
+    .testimonials-sub .stars-icon {
+        padding-bottom: 5px;
+    }
+
+    .testimonials-sub .h4 {
+        font-size: 17px;
+    }
     
+    .testimonials .carousel-indicators button {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    .testimonials .carousel-inner .testimonial-txt {
+        font-size: 15px;
+    }
+
+    .testimonials .carousel-inner .person {
+        font-size: 11px;
+    }
+
+    .testimonials .carousel-inner .t-person {
+        border-radius: 50%;
+    }
+
+    .testimonials .carousel-inner .carousel-item {
+        height: 50vh;
+    }
+
+    .testimonials .testimonial-img {
+        height: 110px;
+        width: 110px;
+    }
+
+    /* Contact Section */
+    .contact {
+        margin: 0;
+        height: 150vh;
+    }
+    
+    .contact-title .h2 {
+        padding: 20px 0;
+        font-size: 25px;
+        text-align: center;
+    }
 
     .contact-container {
         display: grid;
+    }
+
+    .contact-container .my-info {
+        display: grid;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+    
+    .my-info .get-in-touch strong {
+        font-size: 20px;
+    }
+    
+    .my-info .get-in-touch .chat {
+        font-size: 18px;
+    }
+    
+    .my-info .get-in-touch p {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+    .my-info .get-in-touch .questions {
+        display: flex;
+    }
+    
+    .contact-container .contact-me .mail-icon {
+        background-color: lightblue;
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .contact-container .contact-me .mail-me {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    
+    .contact-container .contact-links {
+        display: flex;
+        margin: 0 35px;
+    }
+    
+    .contact-container .contact-links svg {
+        height: 25px;
+        padding: 0 5px;
+    }
+
+    .contact-links .list-group-item {
+        margin: 0 10px;
+    }
+    
+    .contact-links .bi-github:hover {
+        opacity: 1;
+    }
+    
+    .contact-container .contact-me .bi-envelope {
+        height: 20px;
+        margin: 5px;
+    }
+    
+    /* Form Section */
+    .contact-container .contact-form {
+        line-height: 2;
+        margin-top: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-container .contact-form .message {
+        font-size: 20px;
+        line-height: 3;
+    }
+    
+    .contact-container .contact-form .form-control {
+        font-size: 15px;
+        width: 250px;
+        margin: 10px 0;
+    }
+    
+    .contact-form .form .text-area label {
+        font-size: 15px;
+        line-height: 0;
+    }
+    
+    .contact-form .form .btn {
+        width: 100%;
+        box-shadow: 1px 1px 5px 1px black;
+        background-color: #00abf0;
+    }
+    
+    .contact-form .form .btn:hover {
+        background-color: #008bf0;
+    }
+    
+    .contact-form .form .btn:active {
+        box-shadow: none;
     }
 }
 
