@@ -11,6 +11,7 @@ body {
     font-weight: 200;
     font-size: larger;
     font-style: normal;
+    letter-spacing: 1.5px;
 }
 
 /* Landing/Hero Section */
@@ -205,7 +206,11 @@ body {
 /* About Section */
 .about {
     margin: 0px 15%;
-    height: 100vh;
+    height: 90vh;
+}
+
+.about-title .h2 {
+    font-size: 40px;
 }
 
 .about-info {
@@ -245,10 +250,14 @@ body {
     margin: 0px 15%;
 }
 
+.skills .h2 {
+    font-size: 40px;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 70vh;
+    height: 50vh;
     text-align: center;
     margin: 10%;
 }
@@ -270,6 +279,14 @@ body {
 
 .edu-info-container {
     display: flex;
+}
+
+.edu-title {
+    padding: 50px 0;
+}
+
+.edu-title .h2 {
+    font-size: 40px;
 }
 
 .edu-info-container .btn {
@@ -300,6 +317,10 @@ body {
     height: 90vh;
 }
 
+.projects-title .h2 {
+    font-size: 40px;
+}
+
 .projects-container {
     padding: 50px 0;
 }
@@ -325,6 +346,7 @@ body {
     text-shadow: 1px 1px 5px grey;
     font-size: 15px;
     color: black !important;
+    font-weight: 500;
 }
 
 .projects .carousel-inner .carousel-item .github-link .bi-github{
@@ -355,9 +377,10 @@ body {
     opacity: 1;
 }
 
+/* Testimonials Section */
 .testimonials {
     margin: 0px 15%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .testimonials .carousel {
@@ -390,6 +413,12 @@ body {
     margin: -5px 0;
 }
 
+.testimonials .carousel-indicators button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
 .testimonials .carousel-inner .person {
     font-size: 15px;
 }
@@ -406,6 +435,135 @@ body {
     height: 150px;
     width: 150px;
     margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    margin: 0px 15%;
+    height: 80vh;
+}
+
+.contact-title {
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container .my-info {
+    display: grid;
+    line-height: 1.3;
+    margin-top: 100px;
+}
+
+.contact-container .my-info .get-in-touch {
+    display: grid;
+}
+
+.my-info .get-in-touch strong {
+    font-size: 30px;
+    color: #00abf0;
+}
+
+.my-info .get-in-touch .chat {
+    font-size: 25px;
+}
+
+.my-info .get-in-touch p {
+    font-size: 15px;
+}
+
+.contact-container .contact-me {
+    display: flex;
+}
+
+.contact-container .contact-me .mail-icon {
+    background-color: lightblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+.contact-container .contact-me .mail-me {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contact-container .contact-me .bi-envelope {
+    height: 25px;
+    margin: 12px;
+}
+
+/* Form Section */
+.contact-container .contact-form {
+    line-height: 2;
+    margin-top: -50px;
+}
+
+.contact-container .contact-form .message {
+    font-size: 25px;
+    line-height: 3;
+}
+
+.contact-container .contact-form .form-control {
+    font-size: 15px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.contact-form .form .text-area label {
+    font-size: 15px;
+    line-height: 0;
+}
+
+.contact-form .form .btn {
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px black;
+    background-color: #00abf0;
+}
+
+.contact-form .form .btn:hover {
+    background-color: #008bf0;
+}
+
+.contact-form .form .btn:active {
+    box-shadow: none;
+}
+
+/* Footer Section */
+.footer {
+    border-top: 1px solid;
+    padding: 10px;
+    background: linear-gradient(to right, black 10%,#D9D9D9 38%, #D9D9D9 67%, black);
+}
+
+.footer .logo {
+    height: 65px;
+    padding: 15px;
+    margin: -10px;
+    
+}
+
+.footer .logo img {
+    width: 50px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-container .copyrights {
+    margin: auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 300px) {
+    
 }
 
 @media screen and (max-width: 425px) {
@@ -549,7 +707,7 @@ body {
     /* About Section */
     .about {
         margin: 0;
-        height: 120vh;
+        height: 140vh;
         text-align: center;
     }
     
@@ -616,7 +774,7 @@ body {
     /* Education Section */
     .edu {
         margin: 0;
-        height: 90vh;
+        height: 100vh;
     }
 
     .edu-info {
@@ -631,6 +789,10 @@ body {
     .edu-info-container .card .add-info {
         font-weight: 400;
     }
+
+    .edu-info-container .text {
+        font-size: 15px;
+    }
     
     .edu-info-container p {
         height: 150px;
@@ -642,6 +804,7 @@ body {
 
     .edu-info-container .work-xp {
         height: 30px;
+        font-size: 17px;
     }
     
     .education {
@@ -664,5 +827,13 @@ body {
         margin-left: -150px;
     }
 
+    
 
+    .contact-container {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
 }
