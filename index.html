@@ -617,13 +617,17 @@
             <div class="contact-form">
               <div class="contact-details">
                 <p class="message">Send me a message</p>
-                <form action="https://formsubmit.co/harriselvin6@email.com" method="POST" class="form">
-                  <input class="form-control form-control-lg" type="text" placeholder="Full name*" aria-label=".form-control-lg example" required>
-                  <input class="form-control form-control-lg" type="email" placeholder="Email address*" aria-label=".form-control-lg example">
-                  <input class="form-control form-control-lg" type="text" placeholder="Subject" aria-label=".form-control-lg example">
+                <form  
+                  action="https://formcarry.com/s/6J9yeI8Tfhf"
+                  method="POST"
+                  enctype="multipart/form-data" 
+                  class="form">
+                  <input class="form-control form-control-lg" name="full_name" type="text" placeholder="Full name*" aria-label=".form-control-lg example" required>
+                  <input class="form-control form-control-lg" type="email" placeholder="Email address*" name="email" aria-label=".form-control-lg example">
+                  <input class="form-control form-control-lg" name="subject" type="text" placeholder="Subject" aria-label=".form-control-lg example">
                   <div class="mb-3 text-area">
                     <label for="exampleFormControlTextarea1" class="form-label">Message*</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" required></textarea>
                   </div>
                   <button class="btn btn-primary" type="submit">Send</button>
                 </form>
