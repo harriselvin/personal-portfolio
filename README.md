@@ -36,7 +36,7 @@ Skills/Technologies Used: HTML and CSS
 
 Feel free to reach out to me if you have any questions or would like to collaborate on a project. You can connect with me through:
 
-- Email: **harriselvin6@gmail.com
+- Email: **harriselvin6@gmail.com**
 - <a href="https://www.linkedin.com/in/elvin-harris-02590a1a6/" target="_black">LinkedIn</a>
 
 ## Future Plans
