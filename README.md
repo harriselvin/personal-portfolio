@@ -45,6 +45,6 @@ I'm currently a Software Development student, but I'm eager to start working in 
 
 ---
 
-Visit my portfolio here: <a href="https://personal-portfolio-hcqcrswjm-elvins-projects-ec206444.vercel.app/" target"_blank">My Personal Portfolio</a>
+You can visit <a href="https://personal-portfolio-hcqcrswjm-elvins-projects-ec206444.vercel.app/" target="_blank">My Personal Portfolio</a> here.
 
 Thank you for visiting my portfolio! I look forward to connecting with you and exploring new opportunities together.
