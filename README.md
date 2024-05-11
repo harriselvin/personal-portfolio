@@ -20,7 +20,7 @@ Description: Introducing SleekKeys, the visually stunning HTML and CSS-based dig
 
 Skills/Technologies Used: HTML and CSS
 
-<a href="https://vercel.com/elvins-projects-ec206444/digital-keyboard" target="_black">Digital Keyboard</a>
+<a href="https://vercel.com/elvins-projects-ec206444/digital-keyboard" target="_black" rel="noreferrer">Digital Keyboard</a>
 
 ### Project 2: DesignCalc
 
@@ -28,7 +28,7 @@ Description: Introducing DesignCalc, the visually captivating HTML and CSS-based
 
 Skills/Technologies Used: HTML and CSS
 
-<a href="https://vercel.com/elvins-projects-ec206444/digital-calculator" target="_black">Digital Calculator</a>
+<a href="https://vercel.com/elvins-projects-ec206444/digital-calculator" target="_black" rel="noreferrer">Digital Calculator</a>
 
 ...
 
@@ -37,7 +37,7 @@ Skills/Technologies Used: HTML and CSS
 Feel free to reach out to me if you have any questions or would like to collaborate on a project. You can connect with me through:
 
 - Email: **harriselvin6@gmail.com**
-- <a href="https://www.linkedin.com/in/elvin-harris-02590a1a6/" target="_black">LinkedIn</a>
+- <a href="https://www.linkedin.com/in/elvin-harris-02590a1a6/" target="_black" rel="noreferrer">LinkedIn</a>
 
 ## Future Plans
 
